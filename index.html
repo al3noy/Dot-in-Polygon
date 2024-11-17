@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">    
+    <title>Provera tacke unutar mnogougla</title>    
+</head>
+<body>
+    <div class="body">
+        <div class="container">
+            <h2>Provera da li se tačka nalazi unutar mnogougla</h2>
+            <div class="input-container">
+                <label for="brojTemena">Broj temena (max 10): </label>
+                <input type="number" id="brojTemena" placeholder="Unesite broj temena mnogougla" value="5">
+                
+                <label for="koordinate">Koordinate temena (primer unosa: 100,100; 200,100; ...):</label>
+                <input type="text" id="koordinate" placeholder="Unesite koordinate temena" value="100,200;200,400;700,600;800,350;800,100">
+                
+                <label for="tacka">Koordinate tačke (primer unosa: 150,150):</label>
+                <input type="text" id="tacka" placeholder="Unesite koordinate tačke" value="400,200">
+                
+                <button onclick="crtajProveri()">Crtaj i proveri</button>
+            </div>
+            <p id="ispis"></p>
+        </div>  
+        <div class="canvas-cont">
+            <h3>Grafički prikaz mnogougla i tačke</h3>
+            <canvas id="canvas" width="900px" height="850px"></canvas>
+        </div>  
+    </div>
+    <footer>
+        <p>Alen Konjević</p>        
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
